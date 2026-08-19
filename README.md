@@ -1,7 +1,8 @@
-# MD公众号排版
-
+# wangmoguli
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![构建](https://github.com/wangmoguli/wangmoguli/actions/workflows/ci.yml/badge.svg)](https://github.com/wangmoguli/wangmoguli/actions/workflows/ci.yml)
+
 面向公众号写作者的 Markdown 排版工具：左边写 Markdown，右边实时预览公众号效果，一键复制富文本，直接粘贴进公众号后台，样式不丢失。
 
 ## 功能
@@ -67,9 +68,11 @@ npm test         # 运行测试（node --test）
 - 可选的「图床」功能（SM.MS / GitHub / 自定义接口）需要你主动配置 Token，凭据同样只存本机浏览器（明文 localStorage），仅在你手动触发上传时才会把媒体发往对应服务
 - 关闭浏览器标签页或清理站点数据即可彻底抹除所有内容
 
-## 在线版（可选）
+## 在线版
 
-纯静态产物（`npm run build` 输出 `dist/`），部署到 Cloudflare Pages、Vercel 等任意静态托管即可。仓库自带的 GitHub Actions 工作流会在每次 push / PR 时自动跑构建与测试。
+已通过 GitHub Actions 自动部署到 GitHub Pages：<https://wangmoguli.github.io/wangmoguli/>
+
+纯静态产物（`npm run build` 输出 `dist/`），也可部署到 Cloudflare Pages、Vercel 等任意静态托管。仓库自带的 GitHub Actions 工作流会在每次 push 时自动跑构建、测试并部署。
 
 ## License
 
