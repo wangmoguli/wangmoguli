@@ -1,7 +1,7 @@
 // 图片库：粘贴的图片字节存 IndexedDB，文档里只留 local: 短引用。
 // 渲染走内存 objectURL 缓存（渲染是同步的，IndexedDB 是异步的）；
 // 复制到公众号前再把 local: 引用还原成 data URI。
-const DB_NAME = 'md-wechat'
+const DB_NAME = 'wangmoguli'
 const STORE = 'images'
 let dbPromise = null
 
